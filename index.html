@@ -123,13 +123,19 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/js/bootstrap.min.js"></script>
 <script>
 var APIkey = "";
+var APIkey2 = "";
+var APIkey3 = "";
 var queryURL = "" + APIkey;
+var queryURL2 = "" + APIkey2;
+var queryURL3 = "" + APIkey3; 
 
 $("#happy").on("click", function() {
 
 
 $.ajax({
   url: queryURL,
+  url: queryURL2,
+  url: queryURL3,
   method: "GET"
 });
 
@@ -139,6 +145,8 @@ $("#sad").on("click", function() {
 
 $.ajax({
   url: queryURL,
+  url: queryURL2,
+  url: queryURL3,
   method: "GET"
 });
 
@@ -148,6 +156,8 @@ $("#fear").on("click", function() {
 
 $.ajax({
   url: queryURL,
+  url: queryURL2,
+  url: queryURL3,
   method: "GET"
 });
 
@@ -156,6 +166,8 @@ $("#anger").on("click", function() {
 
 $.ajax({
   url: queryURL,
+  url: queryURL2,
+  url: queryURL3,
   method: "GET"
 });
 
@@ -164,6 +176,8 @@ $("#disgust").on("click", function() {
 
 $.ajax({
   url: queryURL,
+  url: queryURL2,
+  url: queryURL3,
   method: "GET"
 });
 
@@ -172,6 +186,8 @@ $("#surpise").on("click", function() {
 
 $.ajax({
   url: queryURL,
+  url: queryURL2,
+  url: queryURL3,
   method: "GET"
 });
 
@@ -181,14 +197,18 @@ $("#contempt").on("click", function() {
 
 $.ajax({
   url: queryURL,
+  url: queryURL2,
+  url: queryURL3,
   method: "GET"
 });
 
 });
-$("#interest").on("click", function() {
+$("#interested").on("click", function() {
 
 $.ajax({
   url: queryURL,
+  url: queryURL2,
+  url: queryURL3,
   method: "GET"
 });
 
@@ -205,7 +225,7 @@ $("#focused").on("click", function() {
   method: "GET"
 });
 });
-$("#confident").on("click", function() {
+$("#moody").on("click", function() {
   $.ajax({
   url: queryURL,
   method: "GET"
@@ -217,13 +237,13 @@ $("#dark").on("click", function() {
   method: "GET"
 });
 });
-$("#confident").on("click", function() {
+$("#grumpy").on("click", function() {
   $.ajax({
   url: queryURL,
   method: "GET"
 });
 });
-$("#confident").on("click", function() {
+$("#uplifted").on("click", function() {
   $.ajax({
   url: queryURL,
   method: "GET"
