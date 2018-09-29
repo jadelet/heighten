@@ -4,36 +4,7 @@
  .navbar {
    margin-bottom: 0;
    border-radius: 0;
-   
  }
-/* "Heighten" css manipulation */
- .navbar-brand {
-  font-family: 'Six Caps', sans-serif;
-  font-size: 50px;
-  text-shadow: 2px 2px #008000;
-  margin-top: -10px;
-  }
-  /* Home, Link, Dropdown link manipulation*/
-  .navbar-nav {
-    font-size: 30px;
-    font-family: 'Six Caps', cursive;
-    color: linen!important;
-
-  }
-  /* Gave space between icons so theyre not bunched up -JE */
-  li {
-    padding-left: .5em;
-  }
-  /* set icon colors to linen, originally were blue */
-  i {
-    color:  linen;
-  }
-
-  .dropdown-item {
-    font-family: 'Times New Roman', Times, serif;
-  }
-
-
  
  /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
  .row.content {height: 450px}
