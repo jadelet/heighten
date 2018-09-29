@@ -145,14 +145,14 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/js/bootstrap.min.js"></script>
   <script src="spotify.js"></script>
   <script>
-    var APIkey = "";
-    var APIkey2 = "";
-    var APIkey3 = "";
-    var queryURL = "" + APIkey;
-    var queryURL2 = "" + APIkey2;
-    var queryURL3 = "" + APIkey3;
+    // var APIkey = "";
+    // var APIkey2 = "";
+    // var APIkey3 = "";
+    // var queryURL = "" + APIkey;
+    // var queryURL2 = "" + APIkey2;
+    // var queryURL3 = "" + APIkey3;
 
-    $("#happy").on("click", function () {
+    $("#button").on("click", function () {
       var APIkey = "";
       var APIkey2 = "";
       var APIkey3 = "";
@@ -165,235 +165,18 @@
         url: queryURL2,
         url: queryURL3,
         method: "GET"
+      })
+       .then(function (response) {
+          var results = response.data;
+          var 
+          var
+          var
       });
 
     });
+  
 
-    $("#sad").on("click", function () {
-      var APIkey = "";
-      var APIkey2 = "";
-      var APIkey3 = "";
-      var queryURL = "" + APIkey;
-      var queryURL2 = "" + APIkey2;
-      var queryURL3 = "" + APIkey3;
-      $.ajax({
-        url: queryURL,
-        url: queryURL2,
-        url: queryURL3,
-        method: "GET"
-      });
-
-    });
-
-    $("#fear").on("click", function () {
-      var APIkey = "";
-      var APIkey2 = "";
-      var APIkey3 = "";
-      var queryURL = "" + APIkey;
-      var queryURL2 = "" + APIkey2;
-      var queryURL3 = "" + APIkey3;
-      $.ajax({
-        url: queryURL,
-        url: queryURL2,
-        url: queryURL3,
-        method: "GET"
-      });
-
-    });
-    $("#anger").on("click", function () {
-      var APIkey = "";
-      var APIkey2 = "";
-      var APIkey3 = "";
-      var queryURL = "" + APIkey;
-      var queryURL2 = "" + APIkey2;
-      var queryURL3 = "" + APIkey3;
-      $.ajax({
-        url: queryURL,
-        url: queryURL2,
-        url: queryURL3,
-        method: "GET"
-      });
-
-    });
-    $("#disgust").on("click", function () {
-      var APIkey = "";
-      var APIkey2 = "";
-      var APIkey3 = "";
-      var queryURL = "" + APIkey;
-      var queryURL2 = "" + APIkey2;
-      var queryURL3 = "" + APIkey3;
-      $.ajax({
-        url: queryURL,
-        url: queryURL2,
-        url: queryURL3,
-        method: "GET"
-      });
-
-    });
-    $("#surprise").on("click", function () {
-      var APIkey = "";
-      var APIkey2 = "";
-      var APIkey3 = "";
-      var queryURL = "" + APIkey;
-      var queryURL2 = "" + APIkey2;
-      var queryURL3 = "" + APIkey3;
-      $.ajax({
-        url: queryURL,
-        url: queryURL2,
-        url: queryURL3,
-        method: "GET"
-      });
-
-    });
-
-    $("#contempt").on("click", function () {
-      var APIkey = "";
-      var APIkey2 = "";
-      var APIkey3 = "";
-      var queryURL = "" + APIkey;
-      var queryURL2 = "" + APIkey2;
-      var queryURL3 = "" + APIkey3;
-      $.ajax({
-        url: queryURL,
-        url: queryURL2,
-        url: queryURL3,
-        method: "GET"
-      });
-
-    });
-    $("#interested").on("click", function () {
-      var APIkey = "";
-      var APIkey2 = "";
-      var APIkey3 = "";
-      var queryURL = "" + APIkey;
-      var queryURL2 = "" + APIkey2;
-      var queryURL3 = "" + APIkey3;
-      $.ajax({
-        url: queryURL,
-        url: queryURL2,
-        url: queryURL3,
-        method: "GET"
-      });
-
-    });
-    $("#confident").on("click", function () {
-
-      var APIkey = "";
-      var APIkey2 = "";
-      var APIkey3 = "";
-      var queryURL = "" + APIkey;
-      var queryURL2 = "" + APIkey2;
-      var queryURL3 = "" + APIkey3;
-
-      $.ajax({
-        url: queryURL,
-        url: queryURL2,
-        url: queryURL3,
-        method: "GET"
-      });
-    });
-    $("#focused").on("click", function () {
-      var APIkey = "";
-      var APIkey2 = "";
-      var APIkey3 = "";
-      var queryURL = "" + APIkey;
-      var queryURL2 = "" + APIkey2;
-      var queryURL3 = "" + APIkey3;
-
-      $.ajax({
-        url: queryURL,
-        url: queryURL2,
-        url: queryURL3,
-        method: "GET"
-      });
-    });
-    $("#moody").on("click", function () {
-
-      var APIkey = "";
-      var APIkey2 = "";
-      var APIkey3 = "";
-      var queryURL = "" + APIkey;
-      var queryURL2 = "" + APIkey2;
-      var queryURL3 = "" + APIkey3;
-
-      $.ajax({
-        url: queryURL,
-        url: queryURL2,
-        url: queryURL3,
-        method: "GET"
-      });
-    });
-    $("#dark").on("click", function () {
-
-      var APIkey = "";
-      var APIkey2 = "";
-      var APIkey3 = "";
-      var queryURL = "" + APIkey;
-      var queryURL2 = "" + APIkey2;
-      var queryURL3 = "" + APIkey3;
-
-      $.ajax({
-        url: queryURL,
-        url: queryURL2,
-        url: queryURL3,
-        method: "GET"
-      });
-    });
-    $("#grumpy").on("click", function () {
-
-      var APIkey = "";
-      var APIkey2 = "";
-      var APIkey3 = "";
-      var queryURL = "" + APIkey;
-      var queryURL2 = "" + APIkey2;
-      var queryURL3 = "" + APIkey3;
-
-      $.ajax({
-        url: queryURL,
-        url: queryURL2,
-        url: queryURL3,
-        method: "GET"
-      });
-      // .then(function) {
-      //   console.log(queryURL);
-      //   console.log(queryURL2);
-      //   console.log(queryURL3);
-
-      // });
-    });
-    $("#uplifted").on("click", function () {
-
-      var APIkey = "";
-      var APIkey2 = "";
-      var APIkey3 = "";
-      var queryURL = "" + APIkey;
-      var queryURL2 = "" + APIkey2;
-      var queryURL3 = "" + APIkey3;
-
-      $.ajax({
-        url: queryURL,
-        url: queryURL2,
-        url: queryURL3,
-        method: "GET"
-      });
-    });
-
-    $("#pumped").on("click", function () {
-
-      var APIkey = "";
-      var APIkey2 = "";
-      var APIkey3 = "";
-      var queryURL = "" + APIkey;
-      var queryURL2 = "" + APIkey2;
-      var queryURL3 = "" + APIkey3;
-
-      $.ajax({
-        url: queryURL,
-        url: queryURL2,
-        url: queryURL3,
-        method: "GET"
-      });
-    });
+    
 
 
 
