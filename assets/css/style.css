@@ -2,32 +2,108 @@
  
  /* Remove the navbar's default margin-bottom and rounded borders */ 
  .navbar {
-   margin-bottom: 0;
-   border-radius: 0;
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+/* "Heighten" css manipulation */
+.navbar-brand {
+ font-family: 'Six Caps', sans-serif;
+ font-size: 50px;
+ text-shadow: 2px 2px #008000;
+ margin-top: -10px;
+ }
+
+ /* Home, Link, Dropdown link manipulation*/
+ .navbar-nav {
+   font-size: 35px;
+   height: 70px;
+   font-family: 'Six Caps', cursive;
+   color: linen!important;
+ }
+
+ h1 {
+   text-align: center;
+   color: rgb(93, 97, 100);
+   font-family: 'Bangers', cursive;
+   padding-bottom: 5px;
+ }
+
+ 
+ 
+
+ /* Gave space between icons so theyre not bunched up -JE */
+ 
+ li {
+   padding-left: .5em;
  }
  
- /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
- .row.content {height: 450px}
- 
- /* Set gray background color and 100% height */
- .sidenav {
-   padding-top: 20px;
-   background-color: #f1f1f1;
-   height: 100%;
+ /* set icon colors to linen, originally were blue */
+ i {
+   color:  linen;
+ }
+
+ .dropdown-item {
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 15px;
+ }
+
+ ul {
+   font-size: 25px;
+   height: 50px;
+ }
+ ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+li{
+  list-style-type: none;
+  text-align: justify;
+}
+
+ button.emoji {
+ font-size: 40px;
+ text-shadow: 0 0 0 linen;
  }
  
- /* Set black background color, white text and some padding */
- footer {
-   background-color: #555;
-   color: white;
-   padding: 15px;
+ .button {
+   padding: 5px;
+   text-align: right;
  }
- 
- /* On small screens, set height to 'auto' for sidenav and grid */
- @media screen and (max-width: 767px) {
-   .sidenav {
-     height: auto;
-     padding: 15px;
-   }
-   .row.content {height:auto;} 
- }
+
+ .btn-light {
+   background-color:whitesmoke;
+}
+
+button.emoji:hover {
+  background-color: rgb(85, 85, 85);
+
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {height: 450px}
+
+/* Set gray background color and 100% height */
+.sidenav {
+  padding-top: 20px;
+  background-color: #f1f1f1;
+  height: 100%;
+}
+
+/* Set black background color, white text and some padding */
+footer {
+  background-color: #555;
+  color: white;
+  padding: 15px;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+  .row.content {height:auto;} 
+}
