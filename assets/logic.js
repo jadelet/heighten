@@ -1,47 +1,34 @@
-
-
-$("button").on("click", function() {
+$("button").on("click", function () {
   console.log("button-clicked");
   var product = $(this).attr("data-emotion");
 
   console.log("button");
 
-var queryURL = "https://api.otreeba.com/v1/products/";  
+  var queryURL = "https://api.otreeba.com/v1/edibles?count=50";
 
-// firebase.initializeApp(config);
+  // firebase.initializeApp(config);
 
-// var database = firebase.database();
+  // var database = firebase.database();
 
-$.ajax({
- url: queryURL,
- method: "GET"
-})
+  $.ajax({
+      url: queryURL,
+      method: "GET"
+    })
 
-.then(function(response) {
+    .then(function (response) {
 
-console.log(response);
+      var drinks = response.data.filter(function(edible) {
+        return edible.name === "TechMeds Syrup - 250mg THC - Strawberry";
+      })
+      var candy = response.data.filter(function(edible) {
+        return edible.type === "candy";
+      })
 
-var results = response.data;
+      
 
-for (var i = 0; i< results.length; i++) {
-// if (!el.value || el.value == '') {
-//    el.placeholder = 'placeholdertext';
+      console.log(drinks);
+      console.log(candy);
+    });
 
-  var gifDiv = $("<div>");
-
-  var productImage = $("<img>");
-
-  productImage.attr("src", results[i]
-  .images.fixed_height.url);
-
-  // gifDiv.append(p);
-  gifDiv.append(productImage);
-
-  $("#gifs-appear-here").prepend(gifDiv);
-} 
-
-
+    
 });
-
-});
-
