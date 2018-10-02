@@ -26,7 +26,7 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mx-auto">
+      <ul class="navbar-nav">
         <li class="nav-item active">
           <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
@@ -47,8 +47,8 @@
         </li>
       </ul>
       
-      <ul class="navbar mr-5">
-      <!-- <ul class="navbar mr-5"> -->
+      
+      <ul class="navbar-social mr-5">
          
         <ul><a
         href="https://www.instagram.com/abovejulio/"  title="Follow Us On Instagram"><i class="fab fa-instagram"></i></a></ul> 
@@ -63,37 +63,53 @@
     <br>
     <br>
     
-    <div class="container-fluid">
+    <div class="container">
         <div class="row justify-content-md-center">
           
-          <div class="col">
-            <div class="sidenav">
-            Food Recommendations
+          <div id="foodSpots>"
+          <div class="col-md-4">
+            <div class="sidebar">
+            <h4>Food Recommendations</h4>
+            <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem asperiores quas eligendi, sapiente qui quos voluptate accusamus soluta, voluptatum hic sit fuga cum ipsam sint. Itaque facere quae libero commodi?</p>
+            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea accusamus natus praesentium doloremque? Fuga reiciendis nostrum quos, nesciunt tempora quis ab cum corrupti harum quia eius voluptas pariatur deleniti! Adipisci.</p>
           </div>
         </div>
+      
           
-          <div class="col">
+          <div class="col-md-4">
               <h1>How do you feel today?</h1>
               
               <ul>
-                <li><button type="button" class="btn-light emoji" id="happy">😀</button></li>
-                <li><button type="button" class="btn-light emoji" id="sad">☹️</button></li>
-                <li><button type="button" class="btn-light emoji" id="scared">😧</button></li>
-                <li><button type="button" class="btn-light emoji" id="angry">😠</button></li>
+                
+                <p><button data-emotion="happy" data-giphytrigger=”happy”>😀</button></p>
+               
+                <p><button data-emotion="sad" data-giphytrigger= “sad”>☹️</button></p>
+                
+                <p><button data-emotion="scared" data-giphytrigger=”safe”>😧</button></p>
+                
+                <p><button data-emotion="anger" data-giphytrigger=”angry”>😠</button></p>
               </ul>
               
+              <br>
+
               <ul>
-                <li><button type="button" class="btn-light emoji" id="focused">🤔</button></li>
-                <li><button type="button" class="btn-light emoji" id="uplifted">😋</button></li>
-                <li><button type="button" class="btn-light emoji" id="pumped">😲</button></li>
-                <li><button type="button" class="btn-light emoji" id="sleepy">😪</button></li>
+              
+                <p><button data-emotion="focused" data-giphytrigger=”inspired”>🤔</button></p>
+                
+                <p><button data-emotion="uplifted" data-giphytrigger=”happy”>😋</button></p>
+                
+                <p><button data-emotion="pumped" data-giphytrigger=”happy”>😲</button></p>
+            
+                <p><button data-emotion="sleepy" data-giphytrigger=”happy”>😪</button></p>
               </ul>
               </div>
               
-          
-          <div class="col">
-            <div class="sidenav">
-            Cannabis Strains
+          <div id="cannabisSpots"
+          <div class="col-md-4">
+            <div class="sidebar">
+            <h4>Cannabis Strains</h4>
+            <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam a corporis maiores, modi veniam velit laudantium voluptatem! Ab eius harum mollitia voluptatum similique. Deleniti reprehenderit praesentium labore facere voluptatibus incidunt!</p>
+            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo molestiae reprehenderit possimus dolorem nulla aut blanditiis accusamus alias amet inventore, sapiente quia recusandae voluptatem dolores eius eveniet, minima voluptates molestias.</p>
           </div>
         </div>
         

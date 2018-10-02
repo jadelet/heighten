@@ -16,10 +16,17 @@
 
  /* Home, Link, Dropdown link manipulation*/
  .navbar-nav {
+   padding-left: 450px;
    font-size: 35px;
    height: 70px;
    font-family: 'Six Caps', cursive;
-   color: linen!important;
+   color: linen !important;
+ }
+
+ .navbar-social {
+   padding-left: 300px;
+   margin-top:20px;
+   
  }
 
  h1 {
@@ -53,57 +60,44 @@
    height: 50px;
  }
  ul {
+  padding-left: 10px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 li{
   list-style-type: none;
   text-align: justify;
+  margin: 5px;
+  /* padding-bottom: 5px; */
 }
 
- button.emoji {
- font-size: 40px;
- text-shadow: 0 0 0 linen;
- }
- 
- .button {
-   padding: 5px;
-   text-align: right;
- }
+button {
+   padding: 25px;
+   line-height: none;
+   font-size: 25px;
+   text-shadow: 0 0 0 linen;
+}
 
- .btn-light {
+.btn-light {
    background-color:whitesmoke;
 }
 
-button.emoji:hover {
+button:hover {
   background-color: rgb(85, 85, 85);
 
 }
 
-/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-.row.content {height: 450px}
-
-/* Set gray background color and 100% height */
-.sidenav {
-  padding-top: 20px;
-  background-color: #f1f1f1;
-  height: 100%;
+div.sidebar {
+  background-color: gainsboro;
+  border-style: outset;
+  
+  
 }
 
-/* Set black background color, white text and some padding */
-footer {
-  background-color: #555;
-  color: white;
-  padding: 15px;
+h4 {
+  text-align: center;
 }
 
-/* On small screens, set height to 'auto' for sidenav and grid */
-@media screen and (max-width: 767px) {
-  .sidenav {
-    height: auto;
-    padding: 15px;
-  }
-  .row.content {height:auto;} 
-}
+
