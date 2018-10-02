@@ -1,12 +1,36 @@
-
 $("button").on("click", function () {
   console.log("button-clicked");
   
   console.log("button");
 
   var queryURL = "https://api.otreeba.com/v1/strains?count=50";
+  $.ajax({
+    url: queryURL,
+    method: "GET"
+  })
 
-  var strainsArray = ["data", "image", "thc", "type"];
+  .then(function (response) {
+    var results = response.data;
+      
+      for (var i = 0; i < results.length; i++) {
+        var strainsDiv =$("<div>");
+        console.log(results[i].image)
+        console.log(results[i].name)
+        console.log(results[i].thc)
+        console.log(results[i].type)
+        var p =$("<p>").text("Name :  "+results[i].name)
+        var t=$("<p>").text("THC :  "+results[i].thc)
+        var typ=$("<p>").text("Type :  "+results[i].type)
+        strainsDiv.append(p,t,typ) 
+         var strainsImage = $("<img>");
+        strainsImage.attr("src", results[i].image)
+        strainsDiv.append(strainsImage);
+         //.images.fixed_height.url);
+        $('#displayStrains').append(strainsDiv)
+      }
+
+
+
 
   // var  = $(this).attr("data-edible");
   // var sad = $(this).attr("");
@@ -29,6 +53,7 @@ $("button").on("click", function () {
     })
 
     .then(function (response) {
+      
 
      //console.log (response);
       // var drinks = response.data.filter(function(edible) {
@@ -88,4 +113,5 @@ $("button").on("click", function () {
     });
 
     
+});
 });
