@@ -33,19 +33,12 @@
           <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="#">Link</a>
+          <a class="nav-link text-white" href="#">About</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
+        <li class="nav-item">
+            <a class="nav-link text-white" href="#">Contact Us</a>
+          </li>
+        
         </li>
       </ul>
 
@@ -70,7 +63,7 @@
       
         <div class="col">
         <div class="sidebar">
-          <h4>Food Recommendations</h4>
+          <h4>Food Recommendations:</h4>
           <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem asperiores quas eligendi, sapiente qui quos
             voluptate accusamus soluta, voluptatum hic sit fuga cum ipsam sint. Itaque facere quae libero commodi?</p>
           <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea accusamus natus praesentium doloremque? Fuga
@@ -111,7 +104,7 @@
 
       <div class="col">
       <div class="sidebar">
-          <h4>Cannabis Strains</h4>
+          <h4>Cannabis Strains:</h4>
           <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam a corporis maiores, modi veniam velit
             laudantium voluptatem! Ab eius harum mollitia voluptatum similique. Deleniti reprehenderit praesentium
             labore facere voluptatibus incidunt!</p>
@@ -135,7 +128,7 @@
         $('#happy').on("click", function(e) {
     $("div.sidebar").css('box-shadow', '5px 5px 5px 5px violet');
     });
-
+    reset(click);
          $('#sad').on("click", function(e) {
     $("div.sidebar").css('box-shadow', '7px 7px 7px 7px indigo');
     });
