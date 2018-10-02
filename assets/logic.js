@@ -1,10 +1,23 @@
+
 $("button").on("click", function () {
   console.log("button-clicked");
-  var product = $(this).attr("data-emotion");
-
+  
   console.log("button");
 
-  var queryURL = "https://api.otreeba.com/v1/edibles?count=50";
+  var queryURL = "https://api.otreeba.com/v1/edibles";
+
+  // var  = $(this).attr("data-edible");
+  // var sad = $(this).attr("");
+  // var angry = $(this).attr("");
+  // var pumped = $(this).attr("");
+  // var sleepy = $(this).attr("");
+  // var focused = $(this).attr("");
+  // var uplifted = $(this).attr("");
+
+
+
+  
+ 
 
   // firebase.initializeApp(config);
 
@@ -17,8 +30,9 @@ $("button").on("click", function () {
 
     .then(function (response) {
 
+     console.log (response);
       var drinks = response.data.filter(function(edible) {
-        return edible.name === "TechMeds Syrup - 250mg THC - Strawberry";
+        return edible.name === "TechMeds Syrup - 250mg THC - Strawberry" , "CannaAthlete Nectar - Natural Agave - 500mg THC";
       })
       var candy = response.data.filter(function(edible) {
         return edible.type === "candy";
