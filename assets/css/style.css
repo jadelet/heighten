@@ -1,5 +1,7 @@
 
- 
+ body {
+   background-image: url(/Users/jgescriba/Desktop/Project1/assets/images/grey_@2X.png);
+ }
  /* Remove the navbar's default margin-bottom and rounded borders */ 
  .navbar {
   margin-bottom: 0;
@@ -74,8 +76,8 @@ li{
 }
 
 button {
-   padding: 25px;
-   line-height: none;
+   margin: 5px;
+   padding: 20px;
    font-size: 25px;
    text-shadow: 0 0 0 linen;
 }
@@ -91,7 +93,11 @@ button:hover {
 
 div.sidebar {
   background-color: gainsboro;
-  border-style: outset;
+  /* border-style: hidden; */
+  border-width: 15px;
+  border-color: rgb(85,85,85);
+
+  
   
   
 }
