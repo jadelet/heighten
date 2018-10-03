@@ -10,9 +10,12 @@ $("button").on("click", function () {
     })
 
     .then(function (response) {
+      $("#displayStrains").empty();
       var results = response.data;
-
-      for (var i = 0; i < results.length; i++) {
+      results = results.sort(function () {
+        return Math.random() - .5;
+      })
+      for (var i = 0; i < 5; i++) {
         var strainsDiv = $("<div>");
         console.log(results[i].image)
         console.log(results[i].name)
@@ -21,6 +24,11 @@ $("button").on("click", function () {
         var p = $("<p>").text("Name :  " + results[i].name)
         var t = $("<p>").text("THC :  " + results[i].thc)
         var typ = $("<p>").text("Type :  " + results[i].type)
+        
+
+        
+
+        // console.log(randomizedArray);
         strainsDiv.append(p, t, typ)
         var strainsImage = $("<img>");
         strainsImage.attr("src", results[i].image)
@@ -40,20 +48,20 @@ $("button").on("click", function () {
       // var focused = $(this).attr("");
       // var uplifted = $(this).attr("");
 
-      var queryURL = "https://api.otreeba.com/v1/edibles?count=50";
+      //  var queryURL = "https://api.otreeba.com/v1/edibles?count=50";
 
 
-      // firebase.initializeApp(config);
+      // // // firebase.initializeApp(config);
 
-      // var database = firebase.database();
+      // // // var database = firebase.database();
 
-      $.ajax({
-          url: queryURL,
-          method: "GET"
-        })
+      // $.ajax({
+      //     url: queryURL,
+      //     method: "GET"
+      //   })
 
-        .then(function (response) {
-
+      //   .then(function (response) {
+      //     $('#displayDrinks').empty();
 
           //console.log (response);
           // var drinks = response.data.filter(function(edible) {
@@ -63,75 +71,43 @@ $("button").on("click", function () {
           //   return edible.type === "candy";
           // })
 
-          var results = response.data;
+          // var randomizedArray = response.data;
 
-          for (var i = 0; i < results.length; i++) {
-            var drinksDiv = $("<div>");
-            console.log(results[i].image)
-            console.log(results[i].name)
-            console.log(results[i].thc)
-            console.log(results[i].type)
-            var p = $("<p>").text("Name :  " + results[i].name)
-            var t = $("<p>").text("THC :  " + results[i].thc)
-            var typ = $("<p>").text("Type :  " + results[i].type)
-            drinksDiv.append(p, t, typ)
-            var drinksImage = $("<img>");
-            drinksImage.attr("src", results[i].image)
-            drinksDiv.append(drinksImage);
-            //.images.fixed_height.url);
-            $('#displayDrinks').append(drinksDiv)
-          }
+          // for (var i = 0; i < 5; i++) {
+          //   var drinksDiv = $("<div>");
+          //   console.log(randomizedArray[i].image)
+          //   console.log(randomizedArray[i].name)
+          //   console.log(randomizedArray[i].thc)
+          //   console.log(randomizedArray[i].type)
+          //   var p = $("<p>").text("Name :  " + randomizedArray[i].name)
+          //   var t = $("<p>").text("THC :  " + randomizedArray[i].thc)
+          //   var typ = $("<p>").text("Type :  " + randomizedArray[i].type)
+          //   drinksDiv.append(p, t, typ)
+          //   var drinksImage = $("<img>");
+          //   drinksImage.attr("src", randomizedArray[i].image)
+          //   drinksDiv.append(drinksImage);
+          //   //.images.fixed_height.url);
+            
+          //   $('#displayDrinks').append(drinksDiv)
+          // }
 
-          var results = response.data;
+          // var randomizedArray = response.data;
 
-          for (var i = 0; i < results.length; i++) {
-            var candyDiv = $("<div>");
-            console.log(results[i].image)
-            console.log(results[i].name)
-            console.log(results[i].type)
-            var p = $("<p>").text("Name : " + results[i].name)
-            var t = $("<p>").text("THC : " + results[i].thc)
-            var typ = ("<p>").text("Type : " + results[i].type)
-            candyDiv.append(p, t, typ)
-            var candyImage = $("<img>")
-            candyImage.attr("src", results[i].image)
-            candyDiv.append(candyImage);
-            $('displayCandy').append(candyDiv)
+          // for (var i = 0; i < 5; i++) {
+          //   var candyDiv = $("<div>");
+          //   console.log(randomizedArray[i].image)
+          //   console.log(randomizedArray[i].name)
+          //   console.log(randomizedArray[i].type)
+          //   var p = $("<p>").text("Name : " + randomizedArray[i].name)
+          //   var t = $("<p>").text("THC : " + randomizedArray[i].thc)
+          //   var typ = ("<p>").text("Type : " + randomizedArray[i].type)
+          //   candyDiv.append(p, t, typ)
+          //   var candyImage = $("<img>")
+          //   candyImage.attr("src", randomizedArray[i].image)
+          //   candyDiv.append(candyImage);
+          //   $('displayCandy').append(candyDiv)
 
-            $("#gifs-appear-here").prepend(candyDiv);
-          }
-          var slideIndex = 1;
-          showSlides(slideIndex);
-
-          // Next/previous controls
-          function plusSlides(n) {
-            showSlides(slideIndex += n);
-          }
-
-          // Thumbnail image controls
-          function currentSlide(n) {
-            showSlides(slideIndex = n);
-          }
-
-          function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {
-              slideIndex = 1
-            }
-            if (n < 1) {
-              slideIndex = slides.length
-            }
-            for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-          }
+          // }
 
 
           // drinksDiv.append(drinksImage);
@@ -142,8 +118,8 @@ $("button").on("click", function () {
 
           // console.log(drinks);
           // console.log(candy);
-        });
+//         });
 
 
-    });
+     });
 });
