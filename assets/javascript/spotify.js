@@ -1,4 +1,4 @@
-const spotify_CLIENT = "467eaf72ffba462ab6b231247d31be15";
+const spotify_CLIENT = "08c3f41bf95148ffb128199b403ea6a5";
 
 
 
@@ -249,7 +249,7 @@ function spotifyLogin() {
 
   const client_id = spotify_CLIENT; // Your client id
 
-  const redirect_uri = 'http://localhost:5500/Project1'; // Your redirect uri
+  const redirect_uri = 'http://localhost:5500/skeletonrules.html'; // Your redirect uri
 
 
 

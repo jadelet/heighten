@@ -26,10 +26,11 @@
  }
 
  .navbar-social {
-   padding-left: 300px;
+   padding-left: 450px;
    margin-top:20px;
    
  }
+
 
  h1 {
    text-align: center;
@@ -97,7 +98,7 @@ button:hover {
 
 div.sidenav {
   background-color: gainsboro;
-  border-width: 4px;
+  border-width: 3px;
   border-color: rgb(85,85,85);
   border-style: outset;
   width: 375px;
