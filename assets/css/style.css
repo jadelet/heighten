@@ -26,10 +26,11 @@
  }
 
  .navbar-social {
-   padding-left: 300px;
+   padding-left: 450px;
    margin-top:20px;
    
  }
+
 
  h1 {
    text-align: center;
@@ -47,7 +48,7 @@
    padding-left: .5em;
  }
  
- /* set icon colors to linen, originally were blue */
+ /* set icon colors to white, originally were blue */
  i {
    color: white;
  }
@@ -86,23 +87,37 @@ button:hover {
 
 }
 
-div.sidebar {
+div.sidenav {
   background-color: gainsboro;
-  /* border-style: hidden; */
-  border-width: 4px;
+  border-width: 3px;
   border-color: rgb(85,85,85);
   border-style: outset;
-  margin: 25px 25px 25px 25px;
-  padding: 25px 25px 25px 25px;
-
-  
-  
-  
+  width: 375px;
+  height: 100%;
 }
+
+
 
 h4 {
   text-align: center;
   text-decoration: underline;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+img {
+  width: 150px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
 
+p {
+  text-align: center;
+
+}
+
+/* //spotify player css */
+.mt-5 {
+  border-style: solid;
+}
