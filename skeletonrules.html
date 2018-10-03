@@ -41,7 +41,7 @@
       </ul>
 
 
-      <ul class="navbar-social mr-5">
+      <ul class="navbar-social">
 
         <ul><a href="https://www.instagram.com/memezar/" title="Follow Us On Instagram"><i class="fab fa-instagram"></i></a></ul>
 
@@ -61,11 +61,13 @@
 
       <div class="col">
         <div class="sidenav">
+          <div id="food">
           
           <h4>Food Recommendations:</h4>
           
         </div>
       </div>
+    </div>
     
 
 
@@ -77,16 +79,17 @@
         <ul>
 
           <p><button data-emotion="happy" id="happy" data-giphytrigger=”happy” data-context-uri="spotify:user:ili5jpfk1lcbv26z27qjwu946:playlist:4HTofXs6cYfTk0USy3uLXK"
-              data-toggle="tooltip" data-placement="top" data-otreeba="Mamba Negra">😀</button></p>
+              data-toggle="tooltip" data-placement="top" data-otreeba="TechMeds Syrup - 250mg THC - Strawberry">😀</button></p>
 
           <p><button data-emotion="sad" id="sad" data-giphytrigger=“sad” data-toggle="tooltip" data-placement="top" alt="Sad face"
-              data-context-uri="spotify:user:ili5jpfk1lcbv26z27qjwu946:playlist:0ET5t4sYRzpxOGW6NabO8u">☹️</button></p>
+              data-context-uri="spotify:user:ili5jpfk1lcbv26z27qjwu946:playlist:0ET5t4sYRzpxOGW6NabO8u" data-otreeba="CannaAthlete Nectar - Natural Agave - 500mg THC"
+              >☹️</button></p>
 
           <p><button data-emotion="scared" id="scared" data-giphytrigger=”safe” data-toggle="tooltip" data-placement="top"
-              alt="Scared face" data-context-uri="spotify:user:ili5jpfk1lcbv26z27qjwu946:playlist:0ET5t4sYRzpxOGW6NabO8u">😧</button></p>
+              alt="Scared face" data-context-uri="spotify:user:ili5jpfk1lcbv26z27qjwu946:playlist:0ET5t4sYRzpxOGW6NabO8u" data-otreeba="Healing Tea - 7.5 CBD: 7.5 THC">😧</button></p>
 
           <p><button data-emotion="anger" id="angry" data-giphytrigger=”angry” data-toggle="tooltip" data-placement="top"
-              alt="Angry face" data-context-uri="spotify:user:ili5jpfk1lcbv26z27qjwu946:playlist:5nkvDlI3WErAS3KWPNRHVx">😠</button></p>
+              alt="Angry face" data-context-uri="spotify:user:ili5jpfk1lcbv26z27qjwu946:playlist:5nkvDlI3WErAS3KWPNRHVx" data-otreeba="Cinnamon Jelly Squares (70mg)">😠</button></p>
         </ul>
 
         <br>
@@ -97,13 +100,13 @@
         <ul>
 
           <p><button data-emotion="focused" id="focused" data-giphytrigger=”inspired” data-toggle="tooltip"
-              data-placement="top" alt="Thinking Face" data-context-uri="spotify:user:ili5jpfk1lcbv26z27qjwu946:playlist:2JKSqyjS6lffBiCJXxEx6x">🤔</button></p>
+              data-placement="top" alt="Thinking Face" data-context-uri="spotify:user:ili5jpfk1lcbv26z27qjwu946:playlist:2JKSqyjS6lffBiCJXxEx6x" data-otreeba="Hash Head Worms">🤔</button></p>
 
           <p><button data-emotion="uplifted" id="uplifted" data-giphytrigger=”happy” data-toggle="tooltip"
-              data-placement="top" alt="Starry eyed face" data-context-uri="spotify:user:ili5jpfk1lcbv26z27qjwu946:playlist:2Hnub2eiUKBUxNZBBLjsDw">🤩</button></p>
+              data-placement="top" alt="Starry eyed face" data-context-uri="spotify:user:ili5jpfk1lcbv26z27qjwu946:playlist:2Hnub2eiUKBUxNZBBLjsDw" data-otreeba="Organix - Night Crawlers (250mg)">🤩</button></p>
 
           <p><button data-emotion="pumped" id="pumped" data-giphytrigger=”happy” data-toggle="tooltip" data-placement="top"
-              alt="Pumped" data-context-uri="spotify:user:ili5jpfk1lcbv26z27qjwu946:playlist:2PUMIw3J7owH6EmiA2S9q8">🤨</button></p>
+              alt="Pumped" data-context-uri="spotify:user:ili5jpfk1lcbv26z27qjwu946:playlist:2PUMIw3J7owH6EmiA2S9q8" data-otreeba="Spicy Bitch">🤨</button></p>
 
           <p><button data-emotion="sleepy" id="sleepy" data-giphytrigger=”happy” data-toggle="tooltip" data-placement="top"
               alt="Sleepy face" data-context-uri="spotify:user:ili5jpfk1lcbv26z27qjwu946:playlist:36ruzTY4lV0d5IM4bsH5LJ"data-otreeba="Mamba Negra">😪</button></p>
@@ -123,9 +126,9 @@
 
     
       
-      <div class="jumbotron jumbotron-fluid d-flex align-items-center justify-content-center position-sticky bg-primary mt-5">
+      <div class="jumbotron jumbotron-fluid d-flex align-items-center justify-content-center position-sticky bg-warning mt-5">
 
-                  <h1>Spotify API Tools</h1>
+                  <h2>Spotify API Tools</h2>
 
                   <button class="btn btn-lg btn-success" id="login-button">Login</button>
 
@@ -241,6 +244,8 @@
 
       <script src="assets/javascript/strains.js"></script>
 
+      <script src="assets/javascript/mapaddon.js"></script>
+
       <!--Wrote js so emoji feeling is shown in text above emoji -->
       <script type="text/javascript">
         $(function () {
@@ -250,35 +255,35 @@
 
       <script>
         $('#happy').on("click", function (e) {
-          $("div.sidenav").css('box-shadow', '7px 10px 10px violet');
+          $("div.sidenav").css('box-shadow', '7px 10px 10px DeepPink');
         });
 
         $('#sad').on("click", function (e) {
-          $("div.sidenav").css('box-shadow', '6px 10px 10px indigo');
+          $("div.sidenav").css('box-shadow', '8px 10px 10px indigo');
         });
 
         $('#scared').on("click", function (e) {
-          $("div.sidenav").css('box-shadow', '7px 10px 10px orange');
+          $("div.sidenav").css('box-shadow', '9px 10px 10px OrangeRed');
         });
 
         $('#angry').on("click", function (e) {
-          $("div.sidenav").css('box-shadow', '6px 10px 10px MidnightBlue');
+          $("div.sidenav").css('box-shadow', '7px 10px 10px MidnightBlue');
         });
 
         $('#focused').on("click", function (e) {
-          $("div.sidenav").css('box-shadow', '7px 10px 10px SpringGreen');
+          $("div.sidenav").css('box-shadow', '8px 10px 10px MediumSeaGreen');
         });
 
         $('#uplifted').on("click", function (e) {
-          $("div.sidenav").css('box-shadow', '6px 10px 10px DeepSkyBlue');
+          $("div.sidenav").css('box-shadow', '7px 10px 10px DeepSkyBlue');
         });
 
         $('#pumped').on("click", function (e) {
-          $("div.sidenav").css('box-shadow', '7px 10px 10px MediumSpringGreen');
+          $("div.sidenav").css('box-shadow', '7px 10px 10px LimeGreen');
         });
 
         $('#sleepy').on("click", function (e) {
-          $("div.sidenav").css('box-shadow', '2px 10px 10px yellow');
+          $("div.sidenav").css('box-shadow', '7px 10px 10px Gold');
         });
       </script>
 
