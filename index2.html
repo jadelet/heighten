@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Six+Caps" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="assets//css/style.css">
+
+  <title>Heighten</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand navbar-light bg-dark">
+    <a class="navbar-brand text-white" href="#">Heighten</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item active">
+          <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+      </ul>
+      
+      <ul class="navbar mr-5">
+      <!-- <ul class="navbar mr-5"> -->
+         
+        <ul><a
+        href="https://www.instagram.com/abovejulio/"  title="Follow Us On Instagram"><i class="fab fa-instagram"></i></a></ul> 
+
+        <ul><a href="https://twitter.com/MMPDirectory" title="Follow Us On Twitter"><i class="fab fa-twitter"></i></a></ul>
+
+        <ul><a href="https://njcannabisinsider.nj.com/issues/sample/?s=m" title="Follow Us On Facebook"><i class="fab fa-facebook"></i></a></ul>
+        </ul>
+      
+    </nav>
+    
+    <br>
+    <br>
+    
+    <div class="container-fluid">
+        <div class="row justify-content-md-center">
+          
+          <div class="col-md-4">
+            <div class="sidenav">
+            Food Recommendations
+          </div>
+        </div>
+          
+          <div class="col-md-4">
+              <h1>How do you feel today?</h1>
+              
+              <ul>
+                <li><button type="button" class="btn-light emoji" id="happy"  data-context-uri="spotify:user:ili5jpfk1lcbv26z27qjwu946:playlist:4HTofXs6cYfTk0USy3uLXK">😀</button></li>
+                <li><button type="button" class="btn-light emoji" id="sad"  data-context-uri="spotify:user:ili5jpfk1lcbv26z27qjwu946:playlist:0ET5t4sYRzpxOGW6NabO8u">☹️</button></li>
+                <li><button type="button" class="btn-light emoji" id="scared"  data-context-uri="spotify:user:ili5jpfk1lcbv26z27qjwu946:playlist:0ET5t4sYRzpxOGW6NabO8u">😧</button></li>
+                <li><button type="button" class="btn-light emoji" id="angry"  data-context-uri="spotify:user:ili5jpfk1lcbv26z27qjwu946:playlist:5nkvDlI3WErAS3KWPNRHVx">😠</button></li>
+              </ul>
+              
+              <ul>
+                <li><button type="button" class="btn-light emoji" id="focused"  data-context-uri="spotify:user:ili5jpfk1lcbv26z27qjwu946:playlist:2JKSqyjS6lffBiCJXxEx6x">🤔</button></li>
+                <li><button type="button" class="btn-light emoji" id="uplifted"  data-context-uri="spotify:user:ili5jpfk1lcbv26z27qjwu946:playlist:2Hnub2eiUKBUxNZBBLjsDw">😋</button></li>
+                <li><button type="button" class="btn-light emoji" id="pumped"  data-context-uri="spotify:user:ili5jpfk1lcbv26z27qjwu946:playlist:2PUMIw3J7owH6EmiA2S9q8">😲</button></li>
+                <li><button type="button" class="btn-light emoji" id="sleepy" data-context-uri="spotify:user:ili5jpfk1lcbv26z27qjwu946:playlist:36ruzTY4lV0d5IM4bsH5LJ">😪</button></li>
+              </ul>
+              </div>
+              
+          
+          <div class="col-md-4">
+            <div class="sidenav">
+            Cannabis Strains
+          </div>
+        </div>
+        
+        
+    <div class="row">
+        <div class="row">
+          <div class="row"> 
+          <div class="row">
+            <div class="col-lg-12">
+              
+              <div class="jumbotron jumbotron-fluid d-flex flex-column align-items-center justify-content-center">
+          
+                <h1>Spotify API Tools</h1>
+          
+                <button class="btn btn-lg btn-success" id="login-button">Login</button>
+          
+                <div id="music-player">
+          
+                  <h3 id="track"></h3>
+          
+                  <h4 id="artist" class="text-muted"></h4>
+          
+                  <span id="prev-button"><i class="fas fa-angle-left"></i></span>
+          
+                  <span id="play-button"><i class="fas fa-play"></i></span>
+          
+                  <span id="pause-button"><i class="fas fa-pause"></i></span>
+          
+                  <span id="next-button"><i class="fas fa-angle-right"></i></span>
+          
+                </div>
+          
+            </div>
+          
+          
+          
+            <div class="container-fluid my-5">
+          
+              <div class="row">
+          
+                <div class="col-12 col-md-3">
+          
+                  <div id="profile-info">
+          
+          
+          
+                  </div>
+          
+                  <div id="user-buttons" class="my-3">
+          
+                    <div class="btn btn-primary btn-block" id="user-playlists">Get User Playlists</div>
+          
+                    
+          
+          
+          
+                  </div>
+          
+                </div>
+          
+          
+          
+                <div class="col-12 col-md-9">
+          
+                  <div class="row" id="music_info">
+          
+                    <div class="col-12 col-md-6 mb-5">
+          
+                      <div class="card">
+          
+                        <div class="card-header">
+          
+                          Select Playlist
+          
+                        </div>
+          
+                        <div id="playlist-info" class="list-group list-group-flush">
+          
+                          
+          
+                        </div>
+          
+                      </div>
+          
+                    </div>
+          
+                    <div class="col-12 col-md-6 mb-5">
+          
+                      <div class="card">
+          
+                        <div class="card-header">
+          
+                          Select Track
+          
+                        </div>
+          
+                        <div class="list-group list-group-flush" id="track-info">
+          
+                          Select Playlist to Show Tracks
+          
+                        </div>
+          
+                      </div>
+          
+                    </div>
+          
+                  </div>
+          
+                </div>
+          
+              </div>
+          
+            </div>
+          </div>
+          </div>
+        </div>
+        </div>
+        </div>
+          
+          
+          
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+          
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+          
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/js/bootstrap.min.js"></script>
+          
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+          
+            <script src="https://sdk.scdn.co/spotify-player.js"></script>
+          
+            <script src="spotify.js"></script>
+    
+
+    <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  </body>
+
+</html>

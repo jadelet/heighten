@@ -50,16 +50,12 @@
  
  /* set icon colors to white, originally were blue */
  i {
-<<<<<<< HEAD
    color:  rgb(17, 12, 7);
  }
 
  .dropdown-item {
    font-family: 'Times New Roman', Times, serif;
    font-size: 15px;
-=======
-   color: white;
->>>>>>> a4da3329f411522a85265c16ac60628868a430e6
  }
 
  ul {

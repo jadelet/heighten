@@ -14,7 +14,16 @@
 // [function name of function to call food]
 
 
+
+$("button").on("click", function (mood) {
 function callGiphy(mood) {
+  
+   //if statement regarding under 21
+   console.log("emoji is being clicked");
+   console.log(mood)
+   
+   var mood = $(this).data("giphytrigger"); 
+
   console.log("Button clicked callGiphy function recoginzied");
 
   console.log (mood)
@@ -26,7 +35,7 @@ function callGiphy(mood) {
       method: "GET"
     })
     .then(function (response) {
-      $("#pot").empty();
+      $("giphy-appear-here").empty();
       var results = response.data;
       console.log(response)
       for (var i = 0; i < results.length; i++) {
@@ -39,11 +48,11 @@ function callGiphy(mood) {
           thingImg.attr("src", results[i].images.fixed_height.url);
           thingDiv.append(thingImg);
 
-          $("#pot").prepend(thingDiv);
+          $("giphy-appear-hear").prepend(thingDiv);
         }
         })
       }
-      $("button").on("click", function (mood) {
+      // $("button").on("click", function (mood) {
         //if statement regarding under 21
         console.log("emoji is being clicked");
         console.log(mood)
