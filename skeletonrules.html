@@ -60,25 +60,24 @@
 
 
       <div class="col">
-        <div class="sidebar">
+        <div class="sidenav">
+          
           <h4>Food Recommendations:</h4>
-          <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem asperiores quas eligendi, sapiente qui quos
-            voluptate accusamus soluta, voluptatum hic sit fuga cum ipsam sint. Itaque facere quae libero commodi?</p>
-          <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea accusamus natus praesentium doloremque? Fuga
-            reiciendis nostrum quos, nesciunt tempora quis ab cum corrupti harum quia eius voluptas pariatur deleniti!
-            Adipisci.</p>
+          
         </div>
       </div>
+    
 
 
-
+      
       <div class="col">
+        <div class="row">
         <h1>How do you feel today?</h1>
 
         <ul>
 
           <p><button data-emotion="happy" id="happy" data-giphytrigger=”happy” data-context-uri="spotify:user:ili5jpfk1lcbv26z27qjwu946:playlist:4HTofXs6cYfTk0USy3uLXK"
-              data-toggle="tooltip" data-placement="top">😀</button></p>
+              data-toggle="tooltip" data-placement="top" data-otreeba="Mamba Negra">😀</button></p>
 
           <p><button data-emotion="sad" id="sad" data-giphytrigger=“sad” data-toggle="tooltip" data-placement="top" alt="Sad face"
               data-context-uri="spotify:user:ili5jpfk1lcbv26z27qjwu946:playlist:0ET5t4sYRzpxOGW6NabO8u">☹️</button></p>
@@ -90,6 +89,9 @@
               alt="Angry face" data-context-uri="spotify:user:ili5jpfk1lcbv26z27qjwu946:playlist:5nkvDlI3WErAS3KWPNRHVx">😠</button></p>
         </ul>
 
+        <br>
+        <br>
+        <br>
         <br>
 
         <ul>
@@ -104,29 +106,24 @@
               alt="Pumped" data-context-uri="spotify:user:ili5jpfk1lcbv26z27qjwu946:playlist:2PUMIw3J7owH6EmiA2S9q8">🤨</button></p>
 
           <p><button data-emotion="sleepy" id="sleepy" data-giphytrigger=”happy” data-toggle="tooltip" data-placement="top"
-              alt="Sleepy face" data-context-uri="spotify:user:ili5jpfk1lcbv26z27qjwu946:playlist:36ruzTY4lV0d5IM4bsH5LJ">😪</button></p>
+              alt="Sleepy face" data-context-uri="spotify:user:ili5jpfk1lcbv26z27qjwu946:playlist:36ruzTY4lV0d5IM4bsH5LJ"data-otreeba="Mamba Negra">😪</button></p>
         </ul>
       </div>
-
+    </div>
+  
+      
       <div class="col">
-        <div class="sidebar">
+        <div class="sidenav">
+            <div id="strains-appear-here">
           <h4>Cannabis Strains:</h4>
-          <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam a corporis maiores, modi veniam velit
-            laudantium voluptatem! Ab eius harum mollitia voluptatum similique. Deleniti reprehenderit praesentium
-            labore facere voluptatibus incidunt!</p>
-          <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo molestiae reprehenderit possimus dolorem
-            nulla aut blanditiis accusamus alias amet inventore, sapiente quia recusandae voluptatem dolores eius
-            eveniet, minima voluptates molestias.</p>
+          
         </div>
       </div>
+      </div>
 
-      <div class="row">
-        <div class="row">
-          <div class="row">
-            <div class="row">
-              <div class="col-lg-12">
-
-                <div class="jumbotron jumbotron-fluid d-flex flex-column align-items-center justify-content-center">
+    
+      
+      <div class="jumbotron jumbotron-fluid d-flex align-items-center justify-content-center position-sticky bg-primary mt-5">
 
                   <h1>Spotify API Tools</h1>
 
@@ -229,11 +226,9 @@
                   </div>
 
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+              
+          
+      
 
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -244,6 +239,8 @@
 
       <script src="assets/javascript/spotify.js"></script>
 
+      <script src="assets/javascript/strains.js"></script>
+
       <!--Wrote js so emoji feeling is shown in text above emoji -->
       <script type="text/javascript">
         $(function () {
@@ -253,35 +250,35 @@
 
       <script>
         $('#happy').on("click", function (e) {
-          $("div.sidebar").css('box-shadow', '7px 10px 10px violet');
+          $("div.sidenav").css('box-shadow', '7px 10px 10px violet');
         });
 
         $('#sad').on("click", function (e) {
-          $("div.sidebar").css('box-shadow', '6px 10px 10px indigo');
+          $("div.sidenav").css('box-shadow', '6px 10px 10px indigo');
         });
 
         $('#scared').on("click", function (e) {
-          $("div.sidebar").css('box-shadow', '7px 10px 10px orange');
+          $("div.sidenav").css('box-shadow', '7px 10px 10px orange');
         });
 
         $('#angry').on("click", function (e) {
-          $("div.sidebar").css('box-shadow', '6px 10px 10px MidnightBlue');
+          $("div.sidenav").css('box-shadow', '6px 10px 10px MidnightBlue');
         });
 
         $('#focused').on("click", function (e) {
-          $("div.sidebar").css('box-shadow', '7px 10px 10px SpringGreen');
+          $("div.sidenav").css('box-shadow', '7px 10px 10px SpringGreen');
         });
 
         $('#uplifted').on("click", function (e) {
-          $("div.sidebar").css('box-shadow', '6px 10px 10px DeepSkyBlue');
+          $("div.sidenav").css('box-shadow', '6px 10px 10px DeepSkyBlue');
         });
 
         $('#pumped').on("click", function (e) {
-          $("div.sidebar").css('box-shadow', '7px 10px 10px MediumSpringGreen');
+          $("div.sidenav").css('box-shadow', '7px 10px 10px MediumSpringGreen');
         });
 
         $('#sleepy').on("click", function (e) {
-          $("div.sidebar").css('box-shadow', '2px 10px 10px yellow');
+          $("div.sidenav").css('box-shadow', '2px 10px 10px yellow');
         });
       </script>
 
