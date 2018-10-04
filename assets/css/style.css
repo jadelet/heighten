@@ -139,9 +139,18 @@ p {
 
 }
 
+#music-player > span {
+  margin: 7px;
+}
+
 /* //spotify player css */
 .mt-5 {
   border-style: solid;
+}
+
+img.nivo-main-image {
+  width:150px !important;
+  height: 150px !important;
 }
 
 @viewport {

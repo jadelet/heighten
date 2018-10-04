@@ -249,7 +249,7 @@ function spotifyLogin() {
 
   const client_id = spotify_CLIENT; // Your client id
 
-  const redirect_uri = 'http://localhost:5500/index.html'; // Your redirect uri
+  const redirect_uri = (window.host === "localhost") ? "http://localhost:5500" : "https://jbryant28.github.io/Project1"; // Your redirect uri
 
 
 
@@ -490,8 +490,8 @@ function printTrackInfo(trackArray, playlistContextUri) {
 // select and play track
 
 function selectTrack(playlistUri) {
-
-
+  console.log("HI");
+  console.log(playlistUri);
   $.ajax({
 
     url: `https://api.spotify.com/v1/me/player/play?device_id=${playerId}`,
@@ -715,6 +715,7 @@ $(document)
     $('#login-button').on('click', spotifyLogin);
 
     $(".emoji").on("click", function() {
+      console.log("hello");
       const playlistUri = $(this).attr("data-context-uri");
 
       selectTrack(playlistUri);
