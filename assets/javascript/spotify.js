@@ -249,7 +249,7 @@ function spotifyLogin() {
 
   const client_id = spotify_CLIENT; // Your client id
 
-  const redirect_uri = 'http://localhost:5500/skeletonrules.html'; // Your redirect uri
+  const redirect_uri = 'http://localhost:5500/index.html'; // Your redirect uri
 
 
 

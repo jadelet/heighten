@@ -1,46 +1,62 @@
 
  body {
-   background-image: url(/Users/jgescriba/Desktop/Project1/assets/images/grey_@2X.png);
+   background-image: url(/Users/jgescriba/Desktop/Project1/assets/images/whirlpool.png);
  }
  /* Remove the navbar's default margin-bottom and rounded borders */ 
  .navbar {
   margin-bottom: 0;
   border-radius: 0;
+  overflow: hidden;
+  
 }
 
 /* "Heighten" css manipulation */
 .navbar-brand {
  font-family: 'Six Caps', sans-serif;
  font-size: 50px;
- text-shadow: 2px 2px #008000;
+ font-weight: 675;
+ letter-spacing: 1.5px;
+ text-transform: capitalize;
+ color: DarkSlateGrey !important;
+ text-shadow: 1px 1px Gainsboro;
  margin-top: -10px;
  }
 
  /* Home, Link, Dropdown link manipulation*/
  .navbar-nav {
    padding-left: 450px;
-   font-size: 35px;
+   font-size: 50px;
    height: 70px;
    font-family: 'Six Caps', cursive;
-   
+  }
+
+ .bg-dark {
+   background-color: rgb(72, 170, 160) !important;
  }
 
  .navbar-social {
    padding-left: 450px;
    margin-top:20px;
    
+   
  }
 
 
  h1 {
-   text-align: center;
+   
    color: rgb(93, 97, 100);
    font-family: 'Bangers', cursive;
    padding-bottom: 5px;
  }
 
+ h3 {
+   text-align: center;
+   color: azure;
+ }
  
- 
+ .jumbotron-fluid {
+   width:75%;
+ }
 
  /* Gave space between icons so theyre not bunched up -JE */
  
@@ -88,12 +104,14 @@ button:hover {
 }
 
 div.sidenav {
-  background-color: gainsboro;
+  background-color: white;
   border-width: 3px;
   border-color: rgb(85,85,85);
   border-style: outset;
   width: 375px;
   height: 100%;
+  margin-bottom: 5px;
+  
 }
 
 
@@ -102,6 +120,7 @@ h4 {
   text-align: center;
   text-decoration: underline;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-top: 5px;
 }
 
 img {
@@ -110,14 +129,36 @@ img {
   margin-left: auto;
   margin-right: auto;
   display: block;
+  margin-bottom: 5px;
 }
 
 p {
   text-align: center;
+  font-size: 25px;
+
 
 }
 
 /* //spotify player css */
 .mt-5 {
   border-style: solid;
+}
+
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .navbar :not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+.modal-body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
