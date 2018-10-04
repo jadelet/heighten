@@ -46,37 +46,32 @@ function zomatoAPI() {
         }
       })
       .then(function (response) {
-        var results = response.data;
-        console.log(response)
-        console.log(response.nearby_restaurants)
-
+        var results = response.nearby_restaurants;
+        console.log(results)
+        console.log("response", response.nearby_restaurants)
         $("#food").empty();
+        results = results.sort(function() {
+         return Math.random() - .5;
+        })
         var title = $("<p>").text("Here's what we recommend to improve your mood--try a new place near you!")
         var array = response.nearby_restaurants
+      
         for (var i = 0; i < 5; i++) {
           var restaurantDiv = $("<div>");
-          var restaurantAddress = array[i].restaurant.location.address
+          var restaurantAddress = array[i].restaurant.location.address;
           var restaurantName = array[i].restaurant.name;
-          var restaurantMenu = $("<button>");
-          restaurantMenu.text("MENU");
-          restaurantMenu.attr("src", array[i].restaurant.menu_url);
-          restaurantMenu.addClass("btn btn-info btn-lg")
-          // restaurantMenu.attibute(data-toggle, "modal")
-          // restaurantMenu.attribute(data-target, "#myModal")
-
-
-
-
+          var restaurantMenu = array[i].restaurant.menu_url;
           var p = $("<p>").text(restaurantName + restaurantAddress + restaurantMenu);
-          var restaurantImg = $("<img>");
-
-          restaurantImg.attr("src", array[i].restaurant.photos_url);
           console.log(array[i].restaurant.menu_url)
           restaurantDiv.append(p);
-          restaurantDiv.append(restaurantImg)
+          // restaurantDiv.append(restaurantImg);
           restaurantDiv.append(restaurantMenu);
-
+             
+        
           $("#food").prepend(restaurantDiv);
+          $("#food").prepend(title);
+
+         
         }
       });
   }
