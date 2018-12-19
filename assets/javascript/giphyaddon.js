@@ -1,20 +1,3 @@
-// (The function to split off between giphy or pot)
-
-// $(".giphyOrPot").on("click", function){}
-
-// if >21 button clicked {
-
-// "callGiphy"
-// [function name of function to call spotify]
-// [function name of function to call food]
-// }
-//if 21+ button clicked {
-//  [function name of function to call otreeba]
-// [function name of function to call spotify]
-// [function name of function to call food]
-
-
-
 $("button").on("click", function () {
 
   //if statement regarding under 21
@@ -33,7 +16,7 @@ $("button").on("click", function () {
     method: "GET"
   })
     .then(function (response) {
-      $("#giphy-appear-here").empty();
+      $("#displayStrains").empty();
       var results = response.data;
       console.log(response)
       for (var i = 0; i < results.length; i++) {
@@ -46,7 +29,7 @@ $("button").on("click", function () {
         thingImg.attr("src", results[i].images.fixed_height.url);
         thingDiv.append(thingImg);
 
-        $("#giphy-appear-here").prepend(thingDiv);
+        $("#displayStrains").prepend(thingDiv);
       }
     })
 
